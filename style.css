@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* PARTE 1 */
+
+.parte2 { 
+    display:block;
+    align-items: center;
+    justify-content:left;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.parte2 .ajude {
+    margin-left: 30px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.parte2 .text {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 30px;
+    position: absolute;
+    top: 60px;
+}
+
+
+/* CARTAS */
+
+.cartas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 210px 80px 0px;
+    grid-template-areas: "image" "text" "stats";
+    padding: ;
+    font-family: roboto;
+    border-radius: 18px;
+    background: rgb(140, 241, 241);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-image-1 {
+    grid-area: image;
+    background: url("gato3.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image-2 {
+    grid-area: image;
+    background: url("gato2.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image-3 {
+    grid-area: image;
+    background: url("gato1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .cartas {
+        flex-direction: column;
+        margin-bottom: -30px;
+    }
+
+    .cartas .card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+}
+
+
+/* PARTE 3 */
+.parte4 {
+    display:block;
+    align-items: center;
+    justify-content: right;  
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.parte4 .ajude {
+    margin-right: 90px;
+    text-align: right;
+    margin-bottom: -45px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.parte4 .text {
+    margin-right: 90px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.parte4 .Paragraph {
+    margin-right: 90px;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+}
