@@ -1,0 +1,415 @@
+/*Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Reem Kufi';
+    overflow-x: hidden;
+}
+
+button{
+    border:none;
+    background-color: #FF5858;
+    height: 35px;
+    width: 100px;
+
+    color: white;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #B83E3E;
+}
+
+h1{
+    font-family: 'Sansita';
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo{
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.6em;
+
+    color: white;
+}
+
+a:hover{
+    color: #D9D9D9;
+    transition: .5s;
+}
+
+/*Navbar*/
+
+.barra-navegacao{
+    background-color: #689B9C;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.menu{
+   list-style: none; 
+   display: flex;
+}
+
+.menu li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/*Section 1*/
+
+.content{
+    height: 90vh;
+    background-color: #97D4D5;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 200%;
+}
+
+.slide{
+    position: relative;
+    animation: slide 30s infinite ease-out;
+}
+
+.section-1{
+    background-color: #97D4D5;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+
+.propaganda{
+    padding: 30vh 0 0 15vw;
+}
+
+.propaganda h1{
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1.8em;
+}
+
+.propaganda p{
+    color: white;
+}
+
+.img{
+    padding-left: 20vw;
+    padding-top: 5vh;
+    width: 80%;
+    height: 80%;
+}
+
+.img img{
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+/*Section 2*/
+.parte2{
+    background-color: #F0EDE6;
+    padding-left: 5%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+title { 
+    justify-content:left;
+    background-color: #F0EDE6;
+}
+
+.title h1{
+    color: #54534F;
+}
+
+.title p{
+    color: #888888;
+}
+
+.cartas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 210px 80px 0px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: rgb(140, 241, 241);
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-image-1 {
+    grid-area: image;
+    background: url("img/gato3.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image-2 {
+    grid-area: image;
+    background: url("img/gato2.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image-3 {
+    grid-area: image;
+    background: url("img/gato1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+/*Section 3*/
+.parte4 {
+    height: 52vh;
+    text-align: end;
+    justify-content: right;  
+    background-color: #F0EDE6;  
+    
+    padding-bottom: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    align-items: center;
+}
+
+.parte4 h1{
+    color: #54534F;
+}
+
+.parte4 p{
+    color: #888888;
+}
+
+/*Section 4*/
+
+.form{
+    padding-top: 100px;
+    height: 80vh;
+    background-color: #97D4D5;
+    color: white;
+}
+
+.form h1{
+    text-align: center;
+    color: #54534F;
+    padding-bottom: 20px;
+}
+
+.form button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.campo{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.campo label{
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.campo input{
+    text-align: center;
+    color: #888888;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+}
+
+.options{
+    margin-top: 20px;
+}
+
+.options label{
+    margin-right: 20px;
+}
+.optionN {
+    border: none;
+    width: 20px;
+}
+
+/*Rodapé*/
+
+footer{
+    text-align: center;
+    height: 30px;
+    background-color: #689B9C;
+}
+
+footer p{
+    padding-top: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+@keyframes slide{
+    0%{right: 0}
+    25%{right: 0;}
+
+    50%{right:100vw}
+    75%{right: 100vw;}
+
+    100%{right: 0;}
+}
+
+@media (max-width: 1088px){
+    .body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        z-index: 5;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 80vh;
+        background-color: #689B9C;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+
+    .menu li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .menu.active{
+        transform: translateX(0);
+    }
+       
+    .section-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .propaganda{
+        padding: 2vh 0 0 0;
+        text-align: center;
+    }
+
+    .img{
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .cartas {
+        flex-direction: column;
+    }
+
+    .cartas .card {
+        margin-left: 0;
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}

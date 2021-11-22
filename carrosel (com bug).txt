@@ -1,0 +1,16 @@
+.carrosel{
+    display: flex;
+    position: relative;
+    animation: slide 12s infinite;
+}
+
+#oculto{
+    position: absolute;
+    display: none;
+}
+
+@keyframes slide{
+    0%{right: 0}
+
+    100%{right: 100vw;}
+}
